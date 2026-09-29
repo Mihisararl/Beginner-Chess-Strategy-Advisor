@@ -51,43 +51,6 @@ The system then selects a recommendation according to a predefined rule-priority
 | JavaScript | Client-side interaction                          |
 | JSON       | Communication between frontend, Flask and Prolog |
 
-## System Architecture
-
-The system consists of the following main components:
-
-```text
-+-----------------------------+
-|       Web Interface         |
-|       HTML / CSS / JS       |
-+-------------+---------------+
-              |
-              | HTTP / JSON
-              v
-+-----------------------------+
-|       Flask Backend         |
-|        Python Server        |
-+-------------+---------------+
-              |
-              | JSON / stdin/stdout
-              v
-+-----------------------------+
-|      Prolog Application     |
-|                             |
-|  +-----------------------+  |
-|  | Knowledge Base        |  |
-|  | 30 Facts              |  |
-|  +-----------------------+  |
-|                             |
-|  +-----------------------+  |
-|  | Inference Engine      |  |
-|  | 30 Rules              |  |
-|  +-----------------------+  |
-|                             |
-|  +-----------------------+  |
-|  | Explanation Facility  |  |
-|  +-----------------------+  |
-+-----------------------------+
-```
 
 ## How the System Works
 
